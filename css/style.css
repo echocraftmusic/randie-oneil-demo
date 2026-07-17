@@ -1,0 +1,212 @@
+/* ==========================================
+   EC Framework v1.0
+   Global Styles
+========================================== */
+
+:root{
+
+    --primary:#050505;
+    --secondary:#111111;
+    --accent:#D4AF37;
+
+    --white:#FFFFFF;
+    --light:#EDEDED;
+    --gray:#9A9A9A;
+
+    --max-width:1400px;
+
+    --transition:.30s ease;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+section{
+    padding:120px 0;
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.72),
+    rgba(0,0,0,.80)),
+    url("../images/backgrounds/hero.jpg")
+    center center/cover no-repeat;
+
+}
+
+.hero-content{
+
+    max-width:760px;
+
+}
+
+.hero-tag{
+
+    color:var(--accent);
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+}
+
+.hero h1{
+
+    font-size:4.5rem;
+
+    line-height:1.1;
+
+    margin-bottom:30px;
+
+}
+
+.hero-description{
+
+    font-size:1.2rem;
+
+    max-width:650px;
+
+    color:var(--light);
+
+    margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:18px 38px;
+
+    background:var(--accent);
+
+    color:#000;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.btn-outline{
+
+    display:inline-block;
+
+    padding:18px 38px;
+
+    border:2px solid var(--accent);
+
+    color:var(--white);
+
+    border-radius:50px;
+
+    transition:var(--transition);
+
+}
+
+.btn-outline:hover{
+
+    background:var(--accent);
+
+    color:#000;
+
+}
+
+/* ==========================================
+   CTA
+========================================== */
+
+#cta .glass{
+
+    padding:80px 50px;
+
+    text-align:center;
+
+}
+
+#cta h2{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+#cta p{
+
+    font-size:1.2rem;
+
+    margin-bottom:40px;
+
+}

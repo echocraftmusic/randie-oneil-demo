@@ -1,0 +1,126 @@
+/* ==========================================
+   EC Framework v1.0
+   Navigation
+========================================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:rgba(0,0,0,.65);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(212,175,55,.15);
+
+}
+
+.nav-container{
+
+    width:min(92%,1400px);
+
+    margin:auto;
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:#fff;
+
+    letter-spacing:1px;
+
+}
+
+.logo span{
+
+    color:#D4AF37;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:45px;
+
+}
+
+nav a{
+
+    color:#fff;
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    transition:.30s;
+
+}
+
+nav a:hover{
+
+    color:#D4AF37;
+
+}
+
+.cta-button{
+
+    display:inline-block;
+
+    padding:14px 28px;
+
+    background:#D4AF37;
+
+    color:#000;
+
+    border-radius:40px;
+
+    font-weight:700;
+
+    transition:.30s;
+
+}
+
+.cta-button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+@media(max-width:991px){
+
+    nav{
+
+        display:none;
+
+    }
+
+    .cta-button{
+
+        display:none;
+
+    }
+
+}
